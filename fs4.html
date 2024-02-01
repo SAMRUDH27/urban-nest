@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Nest - Real Estate</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+    }
+
+    header {
+      background-color: #000;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2em;
+      color: #00f;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1.2em;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .property-card {
+      background-color: #333;
+      color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .property-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 5px;
+    }
+    
+    canvas {
+      border: 2px solid #00f;
+      border-radius: 10px;
+      
+    }
+    svg{
+        background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect fill='none' stroke-width='100' id='a' x='-400' y='-300' width='800' height='600'/%3E%3C/defs%3E%3Cg transform='rotate(0 0 0)' style='transform-origin:center'%3E%3Cg transform='rotate(0 0 0)' style='transform-origin:center'%3E%3Cg transform='rotate(0 0 0)' style='transform-origin:center'%3E%3Cg transform='translate(1000 750)'%3E%3Cuse stroke='%23000' href='%23a' transform='rotate(0 0 0)'/%3E%3Cuse stroke='%23000011' href='%23a' transform='rotate(0 0 0)'/%3E%3Cuse stroke='%23000022' href='%23a' transform='rotate(0 0 0)'/%3E%3Cuse stroke='%23000033' href='%23a' transform='rotate(0 0 0)'/%3E%3Cuse stroke='%23000044' href='%23a' transform='rotate(0 0 0)'/%3E%3Cuse stroke='%23000055' href='%23a' transform='rotate(0 0 0)'/%3E%3Cuse stroke='%23000066' href='%23a' transform='rotate(0 0 0)'/%3E%3Cuse stroke='%23000077' href='%23a' transform='rotate(0 0 0)'/%3E%3Cuse stroke='%23000088' href='%23a' transform='rotate(0 0 0)'/%3E%3Cuse stroke='%23000099' href='%23a' transform='rotate(0 0 0)'/%3E%3Cuse stroke='%230000aa' href='%23a' transform='rotate(0 0 0)'/%3E%3Cuse stroke='%230000bb' href='%23a' transform='rotate(0 0 0)'/%3E%3Cuse stroke='%230000cc' href='%23a' transform='rotate(0 0 0)'/%3E%3Cuse stroke='%230000dd' href='%23a' transform='rotate(0 0 0)'/%3E%3Cuse stroke='%230000ee' href='%23a' transform='rotate(0 0 0)'/%3E%3Cuse stroke='%2300F' href='%23a' transform='rotate(0 0 0)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+    }
+    
+
+
+    footer {
+      background-color: #000;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Urban Nest - Real Estate</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Properties</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section>
+    <div class="property-card">
+      <img class="property-image" src="https://cdn.pixabay.com/photo/2017/06/19/04/06/house-2418106_640.jpg" alt="Property 1">
+      <div class="property-details">
+        <h2>Modern Apartment</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo.</p>
+        <p>Price: $500,000</p>
+      </div>
+    </div>
+
+    <div class="property-card">
+      <img class="property-image" src="https://c0.wallpaperflare.com/preview/108/456/1011/white-and-brown-concrete-building.jpg" alt="Property 2">
+      <div class="property-details">
+        <h2>Luxury Villa</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo.</p>
+        <p>Price: $1,200,000</p>
+      </div>
+    </div>
+    <svg width="150" height="150" xmlns="https://img.freepik.com/free-vector/private-houses-set_1284-12684.jpg?size=626&ext=jpg&ga=GA1.1.1966957944.1706447522&semt=ais.svg">
+        <rect x="25" y="75" width="100" height="50" fill="#00f" />
+        <polygon points="25,75 75,25 125,75" fill="#f00" />
+      </svg>
+
+    <div class="property-card">
+      <img class="property-image" src="https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_1280.jpg" alt="Property 3">
+      <div class="property-details">
+        <h2>Cozy Townhouse</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo.</p>
+        <p>Price: $350,000</p>
+      </div>
+    </div>
+
+    <div class="property-card">
+      <img class="property-image" src="https://www.shutterstock.com/image-photo/shot-northern-california-suburban-home-260nw-11164552.jpg" alt="Property 4">
+      <div class="property-details">
+        <h2>Spacious Condo</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo.</p>
+        <p>Price: $800,000</p>
+      </div>
+    </div>
+    <!-- Add more property cards as needed -->
+  </section>
+  <canvas id="realEstateCanvas" width="300" height="200"></canvas>
+
+  
+
+  <script>
+    const canvas = document.getElementById('realEstateCanvas');
+    const context = canvas.getContext('2d');
+
+    // Clear the canvas before starting to draw
+    context.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Set line color for drawing
+    context.strokeStyle = "#000";
+
+    // Event listeners for drawing functionality
+    canvas.addEventListener('mousedown', onMouseDown);
+    canvas.addEventListener('mousemove', onMouseMove);
+    canvas.addEventListener('mouseup', onMouseUp);
+
+    let isDrawing = false;
+
+    function onMouseDown(event) {
+      isDrawing = true;
+      context.beginPath();
+      context.moveTo(event.clientX - canvas.offsetLeft, event.clientY - canvas.offsetTop);
+    }
+
+    function onMouseMove(event) {
+      if (isDrawing) {
+        context.lineTo(event.clientX - canvas.offsetLeft, event.clientY - canvas.offsetTop);
+        context.stroke();
+      }
+    }
+
+    function onMouseUp() {
+      isDrawing = false;
+    }
+  </script>
+  <footer>
+    &copy; 2024 Urban Nest - Real Estate
+  </footer>
+</body>
+</html>
