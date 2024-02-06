@@ -1,676 +1,136 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service</title>
-  
-  
+
     <link rel="shortcut icon" href="assets/images/logo-light.png" type="image/svg+xml">
-  
-    <link rel="stylesheet" href="./assets/css/style.css">
-  
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+  </head>
+
 <body>
-    <header class="header" data-header>
 
-        <div class="overlay" data-overlay></div>
-    
-       
-    
-        <div class="header-bottom">
-          <div class="container">
-    
-            <a href="#" class="logo">
-              <img height="100" width="100" src="./assets/images/logo.png" alt="Urban Nest logo">
-            </a>
-    
-            <nav class="navbar" data-navbar>
-    
-              <div class="navbar-top">
-    
-                <a href="#" class="logo">
-                  <img src="./assets/images/logo.png" alt="Urban Nest logo">
-                </a>
-    
-                <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
-                  <ion-icon name="close-outline"></ion-icon>
-                </button>
-    
-              </div>
-    
-              <div class="navbar-bottom">
-                <ul class="navbar-list">
-    
-                  <li>
-                    <a href="index.html" class="navbar-link" data-nav-link>Home</a>
-                  </li>
-    
-                  <li>
-                    <a href="blog.html" class="navbar-link" data-nav-link>Blog</a>
-                  </li>
-    
-                  <li>
-                    <a href="service.html" class="navbar-link" data-nav-link>Service</a>
-                  </li>
-    
-                  <li>
-                    <a href="#property" class="navbar-link" data-nav-link>Property</a>
-                  </li>
-    
-                  <li>
-                    <a href="gallery.html" class="navbar-link" data-nav-link>Gallery</a>
-                  </li>
-    
-                  <li>
-                    <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
-                  </li>
-    
-                </ul>
-              </div>
-    
-            </nav>
-    
-            <div class="header-bottom-actions">
-              <button class="header-bottom-actions-btn" aria-label="Search">
-                <i class="fas fa-magnifying-glass"  ></i> 
-                <span>Search</span>
-            </button>
-            
-            <button class="header-bottom-actions-btn" aria-label="Profile" onclick="navigateToLogin()">
-              <i class="fa-regular fa-user"></i>
-              <span>Profile</span>
-          </button>
-              <button class="header-bottom-actions-btn" aria-label="Cart">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span>Cart</span>
-              </button>
-    
-              <button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Open Menu">
-                <ion-icon name="menu-outline"></ion-icon>
-    
-                <span>Menu</span>
-              </button>
-    
+    <div class="container mt-5">
+
+        
+        <header class="text-center mb-4">
+            <h1 class="display-4">BLOGS</h1>
+        </header>
+
+        <section class="blog" id="blog">
+            <div class="row justify-content-center">
+
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./assets/images/blog-1.png" class="card-img-top" alt="The Most Inspiring Interior Design Of 2021">
+                        <div class="card-body">
+                            <h5 class="card-title">The Most Inspiring Interior Design Of 2021</h5>
+                            <p class="card-text">by: Admin</p>
+                            <p class="card-text">Interior</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./assets/images/blog-2.jpg" class="card-img-top" alt="Recent Commercial Real Estate Transactions">
+                        <div class="card-body">
+                            <h5 class="card-title">Recent Commercial Real Estate Transactions</h5>
+                            <p class="card-text">by: Admin</p>
+                            <p class="card-text">Estate</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./assets/images/blog-3.jpg" class="card-img-top" alt="Renovating a Living Room? Experts Share Their Secrets">
+                        <div class="card-body">
+                            <h5 class="card-title">Renovating a Living Room? Experts Share Their Secrets</h5>
+                            <p class="card-text">by: Admin</p>
+                            <p class="card-text">Room</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                  </div>
             </div>
-    
-          </div>
-        </div>
-    
-      </header>
+            <div class="row mt-4 justify-content-center">
 
-      <section class="blog" id="blog">
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://imgs.search.brave.com/zUtzM887IHsDFPRJUU8ueh8KQ_0Plz56_Oavx3g0t5g/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTMy/ODQ0NTk0L3Bob3Rv/L2x1eHVyeS1idW5n/YWxvdy13aXRoLXN0/YXRlLW9mLXRoZS1h/cnQtaW50ZXJpb3Iu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PVJWSUlKMVBkN3U0/am1FMFBJamN0alR2/NU45dnVaNFN0YWhT/bnNXXzk0T1k9" class="card-img-top" alt="Title of Blog Post 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Perfect Swimming Pool luxury</h5>
+                            <p class="card-text">by: Admin</p>
+                            <p class="card-text">features</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://imgs.search.brave.com/GNDIJHUFqY4J-eCi46_vlSWWFF7MJxb_JfJZsArJFbA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTE1/NjE5MjY5MS9waG90/by9zdWJ1cmJhbi1o/b3VzZS5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9cVdPYzNo/WTVzWnBoczNJYWJ0/RTNtc3hMTzlXNkdK/ZkNKWUtveHpZWFNR/UT0" class="card-img-top" alt="Title of Blog Post 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Roof Finish</h5>
+                            <p class="card-text">by: Admin</p>
+                            <p class="card-text">roof</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://imgs.search.brave.com/hjjXvmL56XmSrcL3yMxozv03u7z3d9YezmfXduL-ijo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9wbHVz/LnVuc3BsYXNoLmNv/bS9wcmVtaXVtX3Bo/b3RvLTE2ODYwOTA0/NDg1MTctMmY2OTJj/YzQ1MTg3P3E9ODAm/dz0xMDAwJmF1dG89/Zm9ybWF0JmZpdD1j/cm9wJml4bGliPXJi/LTQuMC4zJml4aWQ9/TTN3eE1qQTNmREI4/TUh4elpXRnlZMmg4/TVROOGZISnZiMjE4/Wlc1OE1IeDhNSHg4/ZkRBPQ" class="card-img-top" alt="Title of Blog Post 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Great Furtinushed Finish</h5>
+                            <p class="card-text">by: Admin</p>
+                            <p class="card-text">features</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+               
+
+            </div>
+
+        </section>
+        
+      <footer class="footer mt-5 bg-dark text-light">
         <div class="container">
-
-          <p class="section-subtitle">News & Blogs</p>
-
-          <h2 class="h2 section-title">Leatest News Feeds</h2>
-
-          <ul class="blog-list has-scrollbar">
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/blog-1.png" alt="The Most Inspiring Interior Design Of 2021" class="w-100">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-content-top">
-
-                    <ul class="card-meta-list">
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="person"></ion-icon>
-
-                          <span>by: Admin</span>
-                        </a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="pricetags"></ion-icon>
-
-                          <span>Interior</span>
-                        </a>
-                      </li>
-
-                    </ul>
-
-                    <h3 class="h3 blog-title">
-                      <a href="#">The Most Inspiring Interior Design Of 2021</a>
-                    </h3>
-
-                  </div>
-
-                  <div class="blog-content-bottom">
-                    <div class="publish-date">
-                      <ion-icon name="calendar"></ion-icon>
-
-                      <time datetime="2022-27-04">Apr 27, 2022</time>
-                    </div>
-
-                    <a href="#" class="read-more-btn">Read More</a>
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/blog-2.jpg" alt="Recent Commercial Real Estate Transactions" class="w-100">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-content-top">
-
-                    <ul class="card-meta-list">
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="person"></ion-icon>
-
-                          <span>by: Admin</span>
-                        </a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="pricetags"></ion-icon>
-
-                          <span>Estate</span>
-                        </a>
-                      </li>
-
-                    </ul>
-
-                    <h3 class="h3 blog-title">
-                      <a href="#">Recent Commercial Real Estate Transactions</a>
-                    </h3>
-
-                  </div>
-
-                  <div class="blog-content-bottom">
-                    <div class="publish-date">
-                      <ion-icon name="calendar"></ion-icon>
-
-                      <time datetime="2022-27-04">Apr 27, 2022</time>
-                    </div>
-
-                    <a href="#" class="read-more-btn">Read More</a>
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/blog-3.jpg" alt="Renovating a Living Room? Experts Share Their Secrets"
-                    class="w-100">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-content-top">
-
-                    <ul class="card-meta-list">
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="person"></ion-icon>
-
-                          <span>by: Admin</span>
-                        </a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="pricetags"></ion-icon>
-
-                          <span>Room</span>
-                        </a>
-                      </li>
-
-                    </ul>
-
-                    <h3 class="h3 blog-title">
-                      <a href="#">Renovating a Living Room? Experts Share Their Secrets</a>
-                    </h3>
-
-                  </div>
-
-                  <div class="blog-content-bottom">
-                    <div class="publish-date">
-                      <ion-icon name="calendar"></ion-icon>
-
-                      <time datetime="2022-27-04">Apr 27, 2022</time>
-                    </div>
-
-                    <a href="#" class="read-more-btn">Read More</a>
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-          <ul class="blog-list has-scrollbar">
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/blog-1.png" alt="The Most Inspiring Interior Design Of 2021" class="w-100">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-content-top">
-
-                    <ul class="card-meta-list">
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="person"></ion-icon>
-
-                          <span>by: Admin</span>
-                        </a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="pricetags"></ion-icon>
-
-                          <span>Interior</span>
-                        </a>
-                      </li>
-
-                    </ul>
-
-                    <h3 class="h3 blog-title">
-                      <a href="#">The Most Inspiring Interior Design Of 2021</a>
-                    </h3>
-
-                  </div>
-
-                  <div class="blog-content-bottom">
-                    <div class="publish-date">
-                      <ion-icon name="calendar"></ion-icon>
-
-                      <time datetime="2022-27-04">Apr 27, 2022</time>
-                    </div>
-
-                    <a href="#" class="read-more-btn">Read More</a>
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/blog-2.jpg" alt="Recent Commercial Real Estate Transactions" class="w-100">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-content-top">
-
-                    <ul class="card-meta-list">
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="person"></ion-icon>
-
-                          <span>by: Admin</span>
-                        </a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="pricetags"></ion-icon>
-
-                          <span>Estate</span>
-                        </a>
-                      </li>
-
-                    </ul>
-
-                    <h3 class="h3 blog-title">
-                      <a href="#">Recent Commercial Real Estate Transactions</a>
-                    </h3>
-
-                  </div>
-
-                  <div class="blog-content-bottom">
-                    <div class="publish-date">
-                      <ion-icon name="calendar"></ion-icon>
-
-                      <time datetime="2022-27-04">Apr 27, 2022</time>
-                    </div>
-
-                    <a href="#" class="read-more-btn">Read More</a>
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/blog-3.jpg" alt="Renovating a Living Room? Experts Share Their Secrets"
-                    class="w-100">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-content-top">
-
-                    <ul class="card-meta-list">
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="person"></ion-icon>
-
-                          <span>by: Admin</span>
-                        </a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="pricetags"></ion-icon>
-
-                          <span>Room</span>
-                        </a>
-                      </li>
-
-                    </ul>
-
-                    <h3 class="h3 blog-title">
-                      <a href="#">Renovating a Living Room? Experts Share Their Secrets</a>
-                    </h3>
-
-                  </div>
-
-                  <div class="blog-content-bottom">
-                    <div class="publish-date">
-                      <ion-icon name="calendar"></ion-icon>
-
-                      <time datetime="2022-27-04">Apr 27, 2022</time>
-                    </div>
-
-                    <a href="#" class="read-more-btn">Read More</a>
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-  <footer class="footer">
-
-    <div class="b-example-divider"></div>
-
-    <div class="container">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-          </a>
-          <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Urban Nest , Inc</span>
-        </div>
-    
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-        </ul>
-      </footer>
-    </div>
-    
-    <div class="b-example-divider"></div>
-    
-    <div class="container">
-      <footer class="py-3 my-4">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Services</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-        </ul>
-        <p class="text-center text-body-secondary">&copy; 2024 Urban Nest, Inc</p>
-      </footer>
-    </div>
-    <button id="newsletterBtn" class="nav-link px-2 text-body-secondary" style="text-decoration: white;">Newsletter Signup</button>
-
-
-  </footer>
-    
-</body>
-</html>
-
-
-
-
- -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Service</title>
-
-
-  <link rel="shortcut icon" href="assets/images/logo-light.png" type="image/svg+xml">
-
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
-    rel="stylesheet"></head>
-<body>
-
-<div class="container mt-5">
-
-    <section class="blog" id="blog">
-        <div class="row justify-content-md-center">
-            <div class="col-md-8">
-                <p class="section-subtitle">News & Blogs</p>
-                <h2 class="h2 section-title">Latest News Feeds</h2>
-
-                <div class="row">
-                    <!-- Blog Post 1 -->
-                    <div class="col-md-6 mb-4">
-                        <div class="blog-card">
-                            <figure class="card-banner">
-                                <img src="./assets/images/blog-1.png" alt="The Most Inspiring Interior Design Of 2021" class="w-100">
-                            </figure>
-                            <div class="blog-content">
-                              <div class="blog-card">
-
-                                <figure class="card-banner">
-                                  <img src="./assets/images/blog-2.jpg" alt="Recent Commercial Real Estate Transactions" class="w-100">
-                                </figure>
-                
-                                <div class="blog-content">
-                
-                                  <div class="blog-content-top">
-                
-                                    <ul class="card-meta-list">
-                
-                                      <li>
-                                        <a href="#" class="card-meta-link">
-                                          <ion-icon name="person"></ion-icon>
-                
-                                          <span>by: Admin</span>
-                                        </a>
-                                      </li>
-                
-                                      <li>
-                                        <a href="#" class="card-meta-link">
-                                          <ion-icon name="pricetags"></ion-icon>
-                
-                                          <span>Estate</span>
-                                        </a>
-                                      </li>
-                
-                                    </ul>
-                
-                                    <h3 class="h3 blog-title">
-                                      <a href="#">Recent Commercial Real Estate Transactions</a>
-                                    </h3>
-                
-                                  </div>
-                
-                                  <div class="blog-content-bottom">
-                                    <div class="publish-date">
-                                      <ion-icon name="calendar"></ion-icon>
-                
-                                      <time datetime="2022-27-04">Apr 27, 2022</time>
-                                    </div>
-                
-                                    <a href="#" class="read-more-btn">Read More</a>
-                                  </div>
-                
-                                </div>
-                
-                              </div>                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Blog Post 2 -->
-                    <div class="col-md-6 mb-4">
-                        <div class="blog-card">
-                            <figure class="card-banner">
-                                <img src="./assets/images/blog-2.jpg" alt="Recent Commercial Real Estate Transactions" class="w-100">
-                            </figure>
-                            <div class="blog-content">
-                              <div class="blog-card">
-
-                                <figure class="card-banner">
-                                  <img src="./assets/images/blog-2.jpg" alt="Recent Commercial Real Estate Transactions" class="w-100">
-                                </figure>
-                
-                                <div class="blog-content">
-                
-                                  <div class="blog-content-top">
-                
-                                    <ul class="card-meta-list">
-                
-                                      <li>
-                                        <a href="#" class="card-meta-link">
-                                          <ion-icon name="person"></ion-icon>
-                
-                                          <span>by: Admin</span>
-                                        </a>
-                                      </li>
-                
-                                      <li>
-                                        <a href="#" class="card-meta-link">
-                                          <ion-icon name="pricetags"></ion-icon>
-                
-                                          <span>Estate</span>
-                                        </a>
-                                      </li>
-                
-                                    </ul>
-                
-                                    <h3 class="h3 blog-title">
-                                      <a href="#">Recent Commercial Real Estate Transactions</a>
-                                    </h3>
-                
-                                  </div>
-                
-                                  <div class="blog-content-bottom">
-                                    <div class="publish-date">
-                                      <ion-icon name="calendar"></ion-icon>
-                
-                                      <time datetime="2022-27-04">Apr 27, 2022</time>
-                                    </div>
-                
-                                    <a href="#" class="read-more-btn">Read More</a>
-                                  </div>
-                
-                                </div>
-                
-                              </div>                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Add more blog posts as needed -->
-
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <h4>Follow Us</h4>
+                    
+                    <li><a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#" class="social-icon"><i class="fab fa-twitter"></i></a></li>
+                <li> <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a></li>
                 </div>
             </div>
         </div>
+    </footer>
+    </div>
 
-        <!-- Additional Rows (if needed) -->
-        <div class="row">
-            <!-- Another Row with Blog Posts -->
-            <!-- ... -->
-
-            <!-- Additional Rows as needed -->
-
-        </div>
-
-    </section>
-
-</div>
-
-<!-- Include your footer content here -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-ZTh0XbZI7HsGvPGVl/GpGDIiV9ZMXyKX48s9VKR5SXMp4" crossorigin="anonymous"></script>
 
 </body>
+
 </html>

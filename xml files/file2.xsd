@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.com/real_estate_complex" xmlns="http://www.example.com/real_estate_complex" elementFormDefault="qualified">
+
+  <xs:element name="real_estate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="property" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="address">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="street" type="xs:string"/>
+                    <xs:element name="city" type="xs:string"/>
+                    <xs:element name="zipcode" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="price">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:decimal">
+                      <xs:attribute name="currency" type="xs:string"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="type" type="xs:string"/>
+              <xs:element name="features">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="bedrooms" type="xs:positiveInteger"/>
+                    <xs:element name="bathrooms" type="xs:decimal"/>
+                    <xs:element name="garage" type="xs:boolean" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:positiveInteger"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<real_estate xmlns="http://www.example.com/real_estate_complex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.com/real_estate_complex real_estate_complex.xsd">
+  <property id="1">
+    <address>
+      <street>123 Main St</street>
+      <city>New York</city>
+      <zipcode>10001</zipcode>
+    </address>
+    <price currency="USD">500000</price>
+    <type>Apartment</type>
+    <features>
+      <bedrooms>2</bedrooms>
+      <bathrooms>1.5</bathrooms>
+    </features>
+  </property>
+  <property id="2">
+    <address>
+      <street>456 Oak Ave</street>
+      <city>Los Angeles</city>
+      <zipcode>90001</zipcode>
+    </address>
+    <price currency="USD">750000</price>
+    <type>House</type>
+    <features>
+      <bedrooms>4</bedrooms>
+      <bathrooms>3</bathrooms>
+      <garage>true</garage>
+    </features>
+  </property>
+</real_estate>
